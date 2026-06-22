@@ -9,7 +9,7 @@ body {
     display: grid;
     place-items: center; 
     height: 100vh; 
-    background-image: url('/bg.png');
+    background-image: url('bg.png');
     background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
     background-position: center;
 }
