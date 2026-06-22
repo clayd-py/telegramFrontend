@@ -1,19 +1,75 @@
-.input {
+body {
+    overflow-y: hidden; /* Desactiva el scroll vertical */
+    overflow-x: hidden; /* Desactiva el scroll horizontal */
+    margin: 0; /* Elimina el margen por defecto del body */
+}
+
+#container {
+    background-color: #ffffff;
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+    background-image: url('/bg.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-position: center;
+}
+
+#container2 {
+    background-color: #bbbbbb;
+    display: flex;         
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    
+    /* Reducido de 550px a 460px para estilizar el contenedor */
+    width: 460px;          
+    height: auto;          
+    
+    padding: 40px 30px;    
+    border-radius: 20px; 
+    border: 3px solid #444444;
+    box-sizing: border-box; 
+}
+
+#myform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;           
+}
+
+.input {
+    /* Reducido de 500px a 380px para que no sea tan ancho */
+    width: 380px;           
+    max-width: 1000px;      
+    
+    padding: 18px; 
+    font-size: 24px; 
+    
+    margin: 14px 0;         
+    border: 3px solid #939393;
+    border-radius: 12px;
+    font-family: coolvetica, sans-serif;
+    box-sizing: border-box; 
 }
 
 .button {
-    align-items: center;
-    padding: 10px 20px;
+    /* El botón encaja con el nuevo ancho de 380px */
+    width: 380px;           
+    max-width: 1000px;      
+    
+    padding: 20px;
+    font-size: 24px;
+    
+    margin-top: 20px; /* Un pelín más de separación para estirar el diseño */
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
     cursor: pointer;
+    font-family: coolvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .button:hover {
