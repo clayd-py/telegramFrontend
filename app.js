@@ -15,7 +15,7 @@ formulario.addEventListener("submit", function(event) {
     const dateUsuario = document.getElementById("date").value;
 
     // Envía el texto a tu archivo Python (servidor)
-    fetch("http://127.0.0.1:5000/guardar-usuario", {
+    fetch("https://telegram-message-handler.up.railway.app/guardar-usuario", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
